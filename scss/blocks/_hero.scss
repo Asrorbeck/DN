@@ -1,0 +1,104 @@
+.hero {
+  height: 100vh;
+  position: relative;
+  background-image: url("../../img/hero-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(12, 44, 101, 0.5);
+    z-index: 0;
+  }
+
+  &::before {
+    position: absolute;
+    display: inline-block;
+    content: "";
+    width: 240px;
+    height: 215px;
+    bottom: 0;
+    right: 0;
+    background-image: url("../../img/hero-right-bottom.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    z-index: 1;
+  }
+  &__container {
+    position: relative;
+    z-index: 1;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    &::after {
+      position: absolute;
+      display: inline-block;
+      content: "";
+      width: 358px;
+      height: 520px;
+      top: calc(0% + 10px);
+      right: calc(0% - 20px);
+      background-image: url("../../img/hero-right.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      z-index: -1;
+    }
+
+    &::before {
+      position: absolute;
+      display: inline-block;
+      content: "";
+      width: 140px;
+      height: 310px;
+      bottom: 0;
+      left: calc(0% - 20px);
+      background-image: url("../../img/hero-left-bottom.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      z-index: -1;
+    }
+  }
+  &__header {
+    font-size: 64px;
+    color: #fff;
+    font-family: Belissimo;
+    font-weight: 400;
+  }
+  &__header-wrapper {
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__subheader {
+    margin-bottom: 50px;
+    font-family: Cambria;
+    text-align: center;
+    font-size: 32px;
+    color: #fff;
+  }
+
+  &__kuyov {
+    line-height: 40px;
+  }
+
+  &__va {
+    line-height: 70px;
+  }
+
+  &__kelin {
+    line-height: 80px;
+    margin-left: 50px;
+  }
+}

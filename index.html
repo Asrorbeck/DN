@@ -1,32 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Asrorbek</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>le-invitations.uz</title>
+  </head>
+  <body>
     <header class="header">
-        <div class="container">
-
+      <div class="navbar">
+        <div class="menu-button" onclick="toggleMenu()">
+          <span class="menu-icon"><img src="./img/burger.svg" alt="" /></span>
         </div>
+
+        <div class="navbar__logo">
+          <p class="navbar__span">D</p>
+          <p class="navbar__ordinary">N</p>
+        </div>
+
+        <button id="navbar__btn" class="navbar__btn">
+          <img
+            width="20"
+            id="music-icon"
+            src="./img/mute.svg"
+            alt="mute music"
+          />
+        </button>
+      </div>
+
+      <div class="menu-overlay" onclick="toggleMenu()"></div>
+
+      <div class="menu">
+        <div class="menu-header">
+          <span class="close-button" onclick="toggleMenu()">&times;</span>
+        </div>
+
+        <ul>
+          <li><a href="#invit">Приглашаем Вас!</a></li>
+
+          <li><a href="#map">Как добраться?</a></li>
+
+          <li><a href="#plan">План мероприятия</a></li>
+
+          <li><a href="#time">До открытия осталось...</a></li>
+        </ul>
+      </div>
     </header>
 
     <main class="main">
-        <section class="hero">
-            <div class="container">
-                <div class="hero__container">
+      <section class="hero">
+        <div class="container">
+          <div class="hero__container">
+            <p class="hero__subheader">
+              Приглашаем Вас <br />
+              на свадьбу
+            </p>
 
-                </div>
-            </div>
-        </section>
+            <span class="hero__header-wrapper">
+              <h2 class="hero__header hero__kuyov">Джахангира</h2>
+              <h2 class="hero__header hero__va">и</h2>
+              <h2 class="hero__header hero__kelin">Нилюфар</h2>
+            </span>
+
+            <a href="#invit" class="arrow">
+              <span></span>
+              <span></span>
+              <span></span>
+            </a>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="footer">
-        <div class="container">
-            
-        </div>
+      <div class="container"></div>
     </footer>
-</body>
+  </body>
 </html>

@@ -1,0 +1,27 @@
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "706";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/news.ttf") format("truetype");
+}
+
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Belissimo";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Belissimo-script.ttf") format("truetype");
+}
+
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Cambria";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/Cambria.woff2") format("woff2"),
+    url("../fonts/Cambria.ttf") format("truetype");
+}
