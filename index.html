@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/main.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="icon" href="./img/favicon.ico" type="image/x-icon" />
     <title>le-invitations.uz</title>
   </head>
   <body>
@@ -51,7 +53,11 @@
     <main class="main">
       <section class="hero">
         <div class="container">
-          <div class="hero__container">
+          <div
+            class="hero__container"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+          >
             <p class="hero__subheader">
               Приглашаем Вас <br />
               на свадьбу
@@ -75,7 +81,11 @@
       <section class="invit">
         <div class="invit__add-wrapper">
           <div class="container">
-            <div class="invit__container">
+            <div
+              class="invit__container"
+              data-aos="fade-up"
+              data-aos-duration="2000"
+            >
               <h3 class="invit__header">Дорогой Гость!</h3>
 
               <p class="invit__body">
@@ -111,7 +121,11 @@
 
       <div class="calendar">
         <div class="container">
-          <div class="calendar__container">
+          <div
+            class="calendar__container"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+          >
             <div class="calendar__wrapper">
               <p class="calendar__weekday">Понедельник</p>
               <p class="calendar__date">30</p>
@@ -133,7 +147,11 @@
 
       <div class="map">
         <div class="container">
-          <div class="map__container">
+          <div
+            class="map__container"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+          >
             <p class="map__subheader">Ресторан</p>
 
             <h3 class="map__header">“Якка Сарой”</h3>
@@ -153,45 +171,39 @@
               referrerpolicy="no-referrer-when-downgrade"
             ></iframe>
 
-            <button class="map__btn">Открыть в Yandex Maps</button>
+            <button id="openMaps" class="map__btn">
+              Открыть в Yandex Maps
+            </button>
           </div>
         </div>
       </div>
 
       <div class="program">
         <div class="container">
-          <div class="program__container">
+          <div
+            class="program__container"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+          >
             <h3 class="program__header">
               Программа <br />
               мероприятия
             </h3>
 
             <ul class="program__list">
-              <li
-                class="program__item"
-                data-aos="fade"
-                data-aos-duration="3000"
-              >
+              <li class="program__item">
                 <p class="program__time">13:00</p>
 
                 <p class="program__event">Куёвнавкар</p>
               </li>
 
-              <li
-                class="program__item"
-                data-aos="fade"
-                data-aos-duration="3000"
-              >
+              <li class="program__item">
                 <p class="program__time">15:00</p>
 
                 <p class="program__event">Фотосессия</p>
               </li>
 
-              <li
-                class="program__item"
-                data-aos="fade"
-                data-aos-duration="3000"
-              >
+              <li class="program__item">
                 <p class="program__time">19:00</p>
 
                 <p class="program__event">
@@ -200,31 +212,19 @@
                 </p>
               </li>
 
-              <li
-                class="program__item"
-                data-aos="fade"
-                data-aos-duration="3000"
-              >
+              <li class="program__item">
                 <p class="program__time">19:00</p>
 
                 <p class="program__event">Банкет</p>
               </li>
 
-              <li
-                class="program__item"
-                data-aos="fade"
-                data-aos-duration="3000"
-              >
+              <li class="program__item">
                 <p class="program__time">21:00</p>
 
                 <p class="program__event">Нарезка торта</p>
               </li>
 
-              <li
-                class="program__item"
-                data-aos="fade"
-                data-aos-duration="3000"
-              >
+              <li class="program__item">
                 <p class="program__time">23:00</p>
 
                 <p class="program__event">
@@ -239,7 +239,11 @@
 
       <div class="form">
         <div class="container">
-          <div class="form__container">
+          <div
+            class="form__container"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+          >
             <h3 class="form__header">Пожелания</h3>
 
             <p class="form__subheader">
@@ -290,7 +294,11 @@
 
     <footer class="footer">
       <div class="container">
-        <div class="footer__container">
+        <div
+          class="footer__container"
+          data-aos="fade-up"
+          data-aos-duration="2000"
+        >
           <h3 class="footer__header">Фотографии и видео</h3>
 
           <p class="footer__subheader">
@@ -377,6 +385,25 @@
       </div>
     </footer>
 
+    <audio id="background-music" style="display: none" loop muted>
+      <source src="./music/music.m4a" type="audio/mp4" />
+      Your browser does not support the audio element.
+    </audio>
+
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <p>Открыть с музыкой?</p>
+        <button class="modal-button" id="yesBtn">Да</button>
+        <button class="modal-button" id="noBtn">Нет</button>
+      </div>
+    </div>
+
     <script src="./js/index.js"></script>
+    <script src="./js/telegram.js"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
