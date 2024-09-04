@@ -21,6 +21,9 @@
   }
   &__container {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     z-index: 1;
     padding-top: 80px;
     padding-bottom: 10px;
@@ -82,11 +85,14 @@
     justify-content: space-evenly;
     margin-bottom: 20px;
     z-index: 111;
+    width: 100%;
   }
   &__list {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    max-width: 300px;
+    width: 100%;
   }
   &__main-link {
     font-family: sans-serif;
