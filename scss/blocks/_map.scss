@@ -1,0 +1,77 @@
+.map {
+  position: relative;
+  background-image: url("../../img/map-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(12, 44, 101, 0.5);
+    z-index: 0;
+  }
+  &::before {
+    position: absolute;
+    display: inline-block;
+    content: "";
+    width: 100px;
+    height: 200px;
+    bottom: calc(0% - 80px);
+    left: 0;
+    background-image: url("../../img/map-bottom.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    z-index: 1;
+  }
+  &__btn {
+    padding: 8px 10px;
+    border: 1px solid #fff;
+    border-radius: 40px;
+    color: #fff;
+    font-family: CambriaFont;
+    font-size: 18px;
+    margin-top: 25px;
+    cursor: pointer;
+  }
+  &__container {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    color: #fff;
+  }
+  &__header {
+    font-family: Belissimo;
+    font-size: 48px;
+    line-height: 45px;
+    margin-bottom: 7px;
+    font-weight: 400;
+  }
+  &__location {
+    font-family: CambriaFont;
+    font-size: 16px;
+    margin-bottom: 50px;
+    font-weight: 400;
+  }
+  &__subheader {
+    font-family: CambriaFont;
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 10px;
+  }
+  &__subtext {
+    font-family: CambriaFont;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 20px;
+  }
+}

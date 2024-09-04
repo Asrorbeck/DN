@@ -1,0 +1,91 @@
+.form {
+  position: relative;
+  background-image: url("../../img/form-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(12, 44, 101, 0.5);
+    z-index: 0;
+  }
+  &::before {
+    position: absolute;
+    display: inline-block;
+    content: "";
+    width: 100px;
+    height: 225px;
+    top: calc(0% - 90px);
+    right: 0;
+    background-image: url("../../img/form-top.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    z-index: 1;
+  }
+  &__btn {
+    padding: 8px 16px;
+    background-color: #fff;
+    border-radius: 40px;
+    font-family: CambriaFont;
+    margin-top: 15px;
+  }
+  &__btn-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__container {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+  }
+  &__control {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+  }
+  &__header {
+    font-family: Belissimo;
+    font-size: 48px;
+    font-weight: 400;
+    margin-bottom: 15px;
+  }
+  &__input {
+    padding: 8px 16px;
+    border: 1px solid #fff;
+    border-radius: 40px;
+    margin-bottom: 10px;
+    font-family: CambriaFont;
+    color: #fff;
+    &::placeholder {
+      color: #fff;
+      font-family: CambriaFont;
+    }
+  }
+  &__input-name {
+    margin-bottom: 5px;
+    font-family: CambriaFont;
+  }
+  &__subheader {
+    font-family: CambriaFont;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+}

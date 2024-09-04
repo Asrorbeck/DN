@@ -71,6 +71,221 @@
           </div>
         </div>
       </section>
+
+      <section class="invit">
+        <div class="invit__add-wrapper">
+          <div class="container">
+            <div class="invit__container">
+              <h3 class="invit__header">Дорогой Гость!</h3>
+
+              <p class="invit__body">
+                В нашей жизни произойдет очень важное <br />
+                событие – наша свадьба! <br />
+                Мы верим и надеемся, что этот день <br />
+                станет красивым началом <br />
+                долгой и счастливой жизни. <br /><br />
+
+                Позвольте пригласить Вас разделить <br />
+                с нами радость этого дня. Подарите свою <br />
+                поддержку и добрые пожелания, <br />
+                а мы в свою очередь поделимся <br />
+                частичкой нашего счастья.
+                <br />
+                <br />
+
+                Позвольте пригласить Вас разделить <br />
+                с нами радость этого дня. Подарите свою <br />
+                поддержку и добрые пожелания,<br />
+                а мы в свою очередь поделимся <br />
+                частичкой нашего счастья.
+              </p>
+            </div>
+          </div>
+          <img
+            src="./img/babochka.png"
+            alt="image of ribbon"
+            class="invit__img"
+          />
+        </div>
+      </section>
+
+      <div class="calendar">
+        <div class="container">
+          <div class="calendar__container">
+            <div class="calendar__wrapper">
+              <p class="calendar__weekday">Понедельник</p>
+              <p class="calendar__date">30</p>
+              <p class="calendar__weekday">Сентября</p>
+            </div>
+
+            <p class="calendar__time">19:00</p>
+
+            <div class="calendar__img-wrapper">
+              <img
+                src="./img/calendar.png"
+                alt="calendar img"
+                class="calendar__img"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="map">
+        <div class="container">
+          <div class="map__container">
+            <p class="map__subheader">Ресторан</p>
+
+            <h3 class="map__header">“Якка Сарой”</h3>
+            <p class="map__subtext">Малый зал</p>
+
+            <p class="map__location">
+              Адрес: г. Ташкент, ул. Абдулла Каххара, 40
+            </p>
+
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2998.3385762063276!2d69.25740417496041!3d41.27973520266744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8a9438721fc7%3A0xef64b91e3caf8304!2sYakka%20Saroy!5e0!3m2!1sru!2s!4v1725448499963!5m2!1sru!2s"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+
+            <button class="map__btn">Открыть в Yandex Maps</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="program">
+        <div class="container">
+          <div class="program__container">
+            <h3 class="program__header">
+              Программа <br />
+              мероприятия
+            </h3>
+
+            <ul class="program__list">
+              <li
+                class="program__item"
+                data-aos="fade"
+                data-aos-duration="3000"
+              >
+                <p class="program__time">13:00</p>
+
+                <p class="program__event">Куёвнавкар</p>
+              </li>
+
+              <li
+                class="program__item"
+                data-aos="fade"
+                data-aos-duration="3000"
+              >
+                <p class="program__time">15:00</p>
+
+                <p class="program__event">Фотосессия</p>
+              </li>
+
+              <li
+                class="program__item"
+                data-aos="fade"
+                data-aos-duration="3000"
+              >
+                <p class="program__time">19:00</p>
+
+                <p class="program__event">
+                  Церемония <br />
+                  бракосочетания
+                </p>
+              </li>
+
+              <li
+                class="program__item"
+                data-aos="fade"
+                data-aos-duration="3000"
+              >
+                <p class="program__time">19:00</p>
+
+                <p class="program__event">Банкет</p>
+              </li>
+
+              <li
+                class="program__item"
+                data-aos="fade"
+                data-aos-duration="3000"
+              >
+                <p class="program__time">21:00</p>
+
+                <p class="program__event">Нарезка торта</p>
+              </li>
+
+              <li
+                class="program__item"
+                data-aos="fade"
+                data-aos-duration="3000"
+              >
+                <p class="program__time">23:00</p>
+
+                <p class="program__event">
+                  Завершения <br />
+                  вечера
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="form">
+        <div class="container">
+          <div class="form__container">
+            <h3 class="form__header">Пожелания</h3>
+
+            <p class="form__subheader">
+              Если хотите, можете тут оставить <br />
+              свои искренние пожелания.
+            </p>
+
+            <form
+              onsubmit="return sendTelegram()"
+              class="form__control"
+              data-aos="fade-up"
+              data-aos-duration="2000"
+            >
+              <div class="form__wrapper">
+                <label class="form__input-name" for="name">Ф.И.О</label>
+                <input
+                  required
+                  type="text"
+                  name="name"
+                  id="name"
+                  class="form__input"
+                  placeholder="Введите текст..."
+                />
+              </div>
+
+              <div class="form__wrapper">
+                <label class="form__input-name form__star" for="text"
+                  >Ваши пожелания</label
+                >
+                <input
+                  required
+                  type="text"
+                  name="text"
+                  id="text"
+                  class="form__input"
+                  placeholder="Введите текст..."
+                />
+              </div>
+
+              <div class="form__btn-wrapper">
+                <button class="form__btn">Отправить</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
     </main>
 
     <footer class="footer">

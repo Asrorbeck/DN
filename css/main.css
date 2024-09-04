@@ -32,6 +32,18 @@ img {
   vertical-align: middle;
 }
 
+iframe {
+  max-width: 600px;
+  width: 100%;
+}
+
+button,
+input {
+  outline: none;
+  background: none;
+  border: none;
+}
+
 @font-face {
   font-display: swap;
   /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
@@ -51,10 +63,10 @@ img {
 @font-face {
   font-display: swap;
   /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: "Cambria";
+  font-family: "CambriaFont";
   font-style: normal;
   font-weight: 600;
-  src: url("../fonts/Cambria.woff2") format("woff2"), url("../fonts/Cambria.ttf") format("truetype");
+  src: url("../fonts/Cambria.ttf") format("truetype");
 }
 html {
   scroll-behavior: smooth;
@@ -334,7 +346,7 @@ html {
 }
 .hero__subheader {
   margin-bottom: 50px;
-  font-family: Cambria;
+  font-family: CambriaFont;
   text-align: center;
   font-size: 32px;
   color: #fff;
@@ -348,4 +360,457 @@ html {
 .hero__kelin {
   line-height: 80px;
   margin-left: 50px;
+}
+
+.invit {
+  position: relative;
+  background-image: url("../../img/invit-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.invit::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(12, 44, 101, 0.5);
+  z-index: 0;
+}
+.invit__body {
+  text-align: center;
+  font-family: "CambriaFont";
+  font-size: 20px;
+}
+.invit__add-wrapper {
+  position: relative;
+  z-index: 1;
+  position: relative;
+}
+.invit__add-wrapper::after {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  width: 65px;
+  height: 200px;
+  top: calc(0% - 65px);
+  right: 0;
+  background-image: url("../../img/invit-top.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.invit__add-wrapper::before {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  width: 65px;
+  height: 200px;
+  bottom: 0;
+  left: 0;
+  background-image: url("../../img/invit-bottom.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.invit__container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 100px;
+  padding-bottom: 150px;
+  color: #fff;
+}
+.invit__header {
+  font-family: Belissimo;
+  font-weight: 400;
+  font-size: 48px;
+  text-align: center;
+}
+.invit__img {
+  width: 100%;
+  position: absolute;
+  bottom: calc(0% - 60px);
+}
+
+.calendar {
+  position: relative;
+  background-image: url("../../img/calendar-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.calendar::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(12, 44, 101, 0.5);
+  z-index: 0;
+}
+.calendar::before {
+  position: absolute;
+  display: inline-block;
+  content: "";
+  width: 65px;
+  height: 200px;
+  bottom: calc(0% - 90px);
+  right: 0;
+  background-image: url("../../img/invit-top.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  z-index: 1;
+}
+.calendar__container {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  position: relative;
+  z-index: 1;
+  color: #fff;
+}
+.calendar__date {
+  font-family: "706";
+  font-size: 48px;
+}
+.calendar__img {
+  max-width: 600px;
+  width: 100%;
+}
+.calendar__time {
+  text-align: center;
+  font-family: "706";
+  font-size: 24px;
+  margin-bottom: 36px;
+}
+.calendar__img-wrapper {
+  position: relative;
+}
+.calendar__img-wrapper::after {
+  position: absolute;
+  display: inline-block;
+  content: "";
+  width: 60px;
+  height: 60px;
+  bottom: calc(0% - 11px);
+  left: calc(0% - 13px);
+  background-image: url("../../img/ring.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.calendar__weekday {
+  font-family: Belissimo;
+  font-size: 32px;
+  font-weight: 400;
+}
+.calendar__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-right: 20px;
+  margin-bottom: 5px;
+}
+
+.map {
+  position: relative;
+  background-image: url("../../img/map-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.map::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(12, 44, 101, 0.5);
+  z-index: 0;
+}
+.map::before {
+  position: absolute;
+  display: inline-block;
+  content: "";
+  width: 100px;
+  height: 200px;
+  bottom: calc(0% - 80px);
+  left: 0;
+  background-image: url("../../img/map-bottom.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  z-index: 1;
+}
+.map__btn {
+  padding: 8px 10px;
+  border: 1px solid #fff;
+  border-radius: 40px;
+  color: #fff;
+  font-family: CambriaFont;
+  font-size: 18px;
+  margin-top: 25px;
+  cursor: pointer;
+}
+.map__container {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  color: #fff;
+}
+.map__header {
+  font-family: Belissimo;
+  font-size: 48px;
+  line-height: 45px;
+  margin-bottom: 7px;
+  font-weight: 400;
+}
+.map__location {
+  font-family: CambriaFont;
+  font-size: 16px;
+  margin-bottom: 50px;
+  font-weight: 400;
+}
+.map__subheader {
+  font-family: CambriaFont;
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+.map__subtext {
+  font-family: CambriaFont;
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.program {
+  position: relative;
+  background-image: url("../../img/program-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.program::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(12, 44, 101, 0.5);
+  z-index: 0;
+}
+.program::before {
+  position: absolute;
+  display: inline-block;
+  content: "";
+  width: 100%;
+  height: 490px;
+  top: calc(0% - 90px);
+  left: 0;
+  background-image: url("../../img/program-top.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  z-index: 1;
+}
+.program__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.program__event {
+  text-align: center;
+  font-family: CambriaFont;
+  font-size: 20px;
+}
+.program__header {
+  font-family: Belissimo;
+  font-size: 48px;
+  line-height: 45px;
+  font-weight: 400;
+  margin-bottom: 45px;
+}
+.program__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  padding-top: 70px;
+}
+.program__item:nth-child(2n-1) {
+  margin-right: 200px;
+}
+.program__item:nth-child(2n) {
+  margin-left: 200px;
+}
+.program__item::before {
+  position: absolute;
+  display: inline-block;
+  content: "";
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #e6c653;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  top: calc(0% + 50px);
+  z-index: 111;
+  left: calc(50% + 91px);
+}
+.program__item:nth-child(2)::before {
+  left: calc(50% - 109px);
+}
+.program__item:nth-child(4)::before {
+  left: calc(50% - 109px);
+}
+.program__item:nth-child(6)::before {
+  left: calc(50% - 109px);
+}
+.program__item::after {
+  position: absolute;
+  display: inline-block;
+  content: "";
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #fff;
+  top: calc(0% - 10px);
+}
+.program__item:nth-child(2)::after {
+  background-image: url("../../img/Gift.svg");
+}
+.program__item:nth-child(3)::after {
+  background-image: url("../../img/Vector.svg");
+}
+.program__list {
+  position: relative;
+}
+.program__list::after {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  width: 3px;
+  height: 630px;
+  border-radius: 1px;
+  background-color: #fff;
+  left: 50%;
+  top: calc(0% + 55px);
+}
+.program__time {
+  font-family: CambriaFont;
+  font-size: 22px;
+}
+
+.form {
+  position: relative;
+  background-image: url("../../img/form-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.form::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(12, 44, 101, 0.5);
+  z-index: 0;
+}
+.form::before {
+  position: absolute;
+  display: inline-block;
+  content: "";
+  width: 100px;
+  height: 225px;
+  top: calc(0% - 90px);
+  right: 0;
+  background-image: url("../../img/form-top.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  z-index: 1;
+}
+.form__btn {
+  padding: 8px 16px;
+  background-color: #fff;
+  border-radius: 40px;
+  font-family: CambriaFont;
+  margin-top: 15px;
+}
+.form__btn-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.form__container {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+}
+.form__control {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+.form__header {
+  font-family: Belissimo;
+  font-size: 48px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+.form__input {
+  padding: 8px 16px;
+  border: 1px solid #fff;
+  border-radius: 40px;
+  margin-bottom: 10px;
+  font-family: CambriaFont;
+  color: #fff;
+}
+.form__input::-moz-placeholder {
+  color: #fff;
+  font-family: CambriaFont;
+}
+.form__input::placeholder {
+  color: #fff;
+  font-family: CambriaFont;
+}
+.form__input-name {
+  margin-bottom: 5px;
+  font-family: CambriaFont;
+}
+.form__subheader {
+  font-family: CambriaFont;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.form__wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
 }/*# sourceMappingURL=main.css.map */
