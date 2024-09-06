@@ -495,8 +495,8 @@ html {
   content: "";
   width: 60px;
   height: 60px;
-  bottom: calc(0% - 11px);
-  left: calc(0% - 13px);
+  bottom: calc(0% - 9px);
+  left: calc(0% - 12px);
   background-image: url("../../img/ring.png");
   background-repeat: no-repeat;
   background-size: contain;
@@ -693,12 +693,6 @@ html {
   border-radius: 50%;
   background-color: #fff;
   top: calc(0% - 10px);
-}
-.program__item:nth-child(2)::after {
-  background-image: url("../../img/Gift.svg");
-}
-.program__item:nth-child(3)::after {
-  background-image: url("../../img/Vector.svg");
 }
 .program__list {
   position: relative;
