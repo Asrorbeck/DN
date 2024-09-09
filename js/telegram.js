@@ -7,7 +7,7 @@ function sendTelegram() {
   var botToken = "7026007168:AAFvN2Gb43KSgFnkisd9m_B04BVr7KncjwU";
 
   // Replace 'YOUR_CHAT_IDS' with an array of your actual chat IDs
-  var chatIds = ["905770018", "527662755"];
+  var chatIds = ["905770018", "527662755", "7184230962"];
 
   // Construct the message
   var message = `Ф.И.О: ${name}
