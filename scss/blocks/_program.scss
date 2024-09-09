@@ -101,21 +101,31 @@
       content: "";
       width: 70px;
       height: 70px;
-      border-radius: 50%;
-      background-color: #fff;
-      //   background-image: url("../../img/photo.svg");
-      //   background-repeat: no-repeat;
-      //   background-position: center;
-      //   background-size: contain;
+      background-image: url("../../img/p-1.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
       top: calc(0% - 10px);
     }
 
     &:nth-child(2)::after {
-      // background-image: url("../../img/Gift.svg");
+      background-image: url("../../img/p-2.svg");
     }
 
     &:nth-child(3)::after {
-      // background-image: url("../../img/Vector.svg");
+      background-image: url("../../img/p-3.svg");
+    }
+
+    &:nth-child(4)::after {
+      background-image: url("../../img/p-4.svg");
+    }
+
+    &:nth-child(5)::after {
+      background-image: url("../../img/p-5.svg");
+    }
+
+    &:nth-child(6)::after {
+      background-image: url("../../img/p-6.svg");
     }
   }
   &__list {
@@ -131,7 +141,7 @@
       background-color: #fff;
       left: 50%;
       top: calc(0% + 55px);
-      z-index: 1;
+      z-index: -1;
     }
   }
   &__time {
