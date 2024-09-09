@@ -583,6 +583,7 @@ html {
   font-size: 16px;
   margin-bottom: 50px;
   font-weight: 400;
+  white-space: nowrap;
 }
 .map__subheader {
   font-family: CambriaFont;
